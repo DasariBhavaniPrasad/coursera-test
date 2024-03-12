@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <script src="angular.min.js"></script>
     <script src="app.js"></script>
-    <style> body { font-size: 1.2em; }</style>
+    <style> body { font-size: 1.2em;
+    img{width:250px;height:350px}}</style>
     <title>Expressions and Interpolation</title>
   </head>
   <body>
@@ -12,6 +13,11 @@
     <div ng-controller='MsgController'>
   {{name}} has a message for you: <br>
     {{sayMessage()}}
+    <div>
+      <button ng-click="feedBhavani()">Feed Bhavani</button>
+      <br>
+      <img ng-src="images/bhavani_{{stateOfBeing}}.png" >
+    </div>
     </div>
   </body>
 </html>
